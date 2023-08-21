@@ -64,13 +64,13 @@ This command will create CPU and memory profiles of the test run:
 
 ```sh
 TF_ACC=1 go test \
-		./internal/service/ec2/... \
-		-v -parallel 1 \
-		-run='^TestAccVPC_basic$' \
-		-cpuprofile cpu.prof \
-		-memprofile mem.prof \
-		-bench \
-		-timeout 60m
+    ./internal/service/ec2/... \
+    -v -parallel 1 \
+    -run='^TestAccVPC_basic$' \
+    -cpuprofile cpu.prof \
+    -memprofile mem.prof \
+    -bench \
+    -timeout 60m
 ```
 
 To read the profile, as prerequisites, install [`pprof`](https://github.com/google/pprof):
@@ -97,13 +97,13 @@ This is a simple script I used:
 export ver=v3.74.3
 git checkout ${ver}
 TF_ACC=1 go test \
-		./internal/service/ec2/... \
-		-v -parallel 1 \
-		-run='^TestAccVPC_basic$' \
-		-cpuprofile cpu-${ver}.prof \
-		-memprofile mem-${ver}.prof \
-		-bench \
-		-timeout 60m
+    ./internal/service/ec2/... \
+    -v -parallel 1 \
+    -run='^TestAccVPC_basic$' \
+    -cpuprofile cpu-${ver}.prof \
+    -memprofile mem-${ver}.prof \
+    -bench \
+    -timeout 60m
 pprof -http=localhost:4599 mem-${ver}.prof
 ```
 
