@@ -27,6 +27,7 @@ These are the changes larger than +/- 5% since v3.69.0.
 | v5.0.1 | v5.1.0 | 2.45 | 3.50 | 42.9% | [Compare](https://github.com/hashicorp/terraform-provider-aws/compare/v5.0.1...v5.1.0) |
 | v5.5.0 | v5.6.0 | 3.50 | 4.18 | 19.4% | [Compare](https://github.com/hashicorp/terraform-provider-aws/compare/v5.5.0...v5.6.0) |
 | v5.6.0 | v5.7.0 | 4.18 | 6.74 | 61.2% | [Compare](https://github.com/hashicorp/terraform-provider-aws/compare/v5.6.0...v5.7.0) |
+| v5.13.1 | v5.14.0 | 6.66 | 5.67 | -14.9% | [Compare](https://github.com/hashicorp/terraform-provider-aws/compare/v5.13.1...v5.14.0) |
 
 ## Delve deeper into these profiles
 
