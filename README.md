@@ -1,5 +1,6 @@
 # awsprovmemprof
-Terraform AWS Provider memory usage changes
+
+The memory improvement at v5.14.0 comes from using [regexache](https://github.com/YakDriver/regexache).
 
 This graph shows the changes in memory usage while running a single VPC acceptance test over time.
 
